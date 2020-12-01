@@ -2,13 +2,13 @@ using System;
 
 namespace gary_garage
 {
-    public class Cessna : Vehicle
+    public class Cessna : Vehicle, IGasVehicle
     {
         public double FuelCapacity { get; set; }
 
         public void RefuelTank()
         {
-            // method definition omitted
+            FuelCapacity = 56.00;
         }
         public override void Drive()
         {
